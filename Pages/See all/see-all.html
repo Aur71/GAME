@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>See all</title>
+    <script type="module" src="see-all.js"></script>
+    <link rel="stylesheet" href="see-all.css" />
+    <link rel="stylesheet" href="/Fontawesome/css/all.css" />
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <!-- Header below -->
+      <header>
+        <nav>
+          <h2 class="logo"><a href="/index.html">GAME</a></h2>
+          <form id="search" class="search">
+            <input type="search" class="search-bar" data-search />
+          </form>
+          <div class="nav-items">
+            <i id="search_button" class="icon fa fa-search"></i>
+            <i class="icon fa-solid fa-cart-shopping"></i>
+            <a href="/index.html"><i class="icon fa-solid fa-user"></i></a>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Cards below -->
+
+      <main data-main>
+        <div class="card-section" id="card_section">
+          <template data-card-template>
+            <div class="card">
+              <a href="#" data-card-link>
+                <div class="card-img" data-card-img></div>
+                <div class="card-info">
+                  <h6 data-card-title></h6>
+                  <div class="card-items">
+                    <div class="card-icons" data-card-icons></div>
+                    <p data-card-price></p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </template>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

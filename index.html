@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GAME</title>
+    <script type="module" src="app.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Fontawesome/css/all.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <!-- NAV below -->
+
+      <header>
+        <nav>
+          <h2 class="logo"><a href="/index.html">GAME</a></h2>
+          <form id="search" class="search">
+            <input type="search" class="search-bar" />
+            <button type="submit" class="searchButton">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+          <div class="nav-items">
+            <i id="search_button" class="icon fa fa-search"></i>
+            <i class="icon fa-solid fa-cart-shopping"></i>
+            <a href="./Pages/Login/login.html"
+              ><i class="icon fa-solid fa-user"></i
+            ></a>
+          </div>
+        </nav>
+      </header>
+
+      <main data-main>
+        <!-- Banner below -->
+        <div class="banner">
+          <a class="banner-link" href="#" data-banner-link>
+            <div class="img-container" data-banner-img></div>
+          </a>
+        </div>
+
+        <!-- Platforms below -->
+        <div class="platforms">
+          <a href="#">
+            <img src="./Icons/steam-white-big.png" alt="Steam logo" />
+          </a>
+
+          <a href="#">
+            <img src="./Icons/battlenet-white-big.png" alt="Battle.net logo" />
+          </a>
+
+          <a href="#">
+            <img src="./Icons/origin-white-big.png" alt="Origin logo" />
+          </a>
+
+          <a href="#">
+            <img src="./Icons/epicgames-white-big.png" alt="Epic Games logo" />
+          </a>
+
+          <a href="#">
+            <img src="./Icons/ps-white-big.png" alt="PSlogo" />
+          </a>
+        </div>
+
+        <!-- Line below -->
+
+        <div class="section-header">
+          <div class="header-text">Top Sellers</div>
+          <div class="line"></div>
+        </div>
+
+        <!-- Slider below -->
+
+        <div class="slider-wrapper">
+          <!-- Buttons below -->
+          <div class="slider-btn" data-slider-left>
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="slider-btn" data-slider-right>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+          <div class="slider" data-slider>
+            <!-- Cards below -->
+            <template data-slider-card-template>
+              <div class="slider-card">
+                <a href="#" data-slider-card-link>
+                  <div class="slider-card-img" data-slider-card-img></div>
+                  <div class="slider-card-info">
+                    <h6 data-slider-card-title></h6>
+                    <div class="slider-card-items">
+                      <div
+                        class="slider-card-icons"
+                        data-slider-card-icons
+                      ></div>
+                      <p data-slider-card-price></p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </template>
+            <!-- Cards above -->
+          </div>
+        </div>
+
+        <!-- Line below -->
+        <div class="section-header">
+          <div class="header-text">Recommended</div>
+          <div class="line"></div>
+        </div>
+
+        <!-- Recommended below -->
+
+        <div class="card-section" id="card_section_1">
+          <template data-card-template>
+            <div class="card">
+              <a href="#" data-card-link>
+                <div class="card-img" data-card-img></div>
+                <div class="card-info">
+                  <h6 data-card-title></h6>
+                  <div class="card-items">
+                    <div class="card-icons" data-card-icons></div>
+                    <p data-card-price></p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </template>
+        </div>
+        <!-- BTN -->
+
+        <div class="btn-wrapper">
+          <a class="btn" href="./Pages/See all/see-all.html">See all</a>
+        </div>
+
+        <!-- Line below -->
+        <div class="section-header">
+          <div class="header-text">Coming soon</div>
+          <div class="line"></div>
+        </div>
+
+        <!-- Coming soon below -->
+        <div class="card-section" id="card_section_2"></div>
+      </main>
+    </div>
+
+    <!-- Footer below -->
+
+    <footer>
+      <div class="footer-items">
+        <div class="row-1">
+          <div class="col col-1">
+            <h4>GAME</h4>
+            <a href="#">ABOUT US</a>
+            <a href="#">PRIVACY POLICY</a>
+            <a href="#">TERMS & CONDITIONS</a>
+            <a href="#">GAME MERCHANDISE</a>
+          </div>
+          <div class="col col-2">
+            <h4>MY ACCOUNT</h4>
+            <a href="#">MY ACCOUNT</a>
+            <a href="#">MY ORDERS</a>
+            <a href="#">AFFILIATE ACCOUNT</a>
+          </div>
+          <div class="col col-4">
+            <h4>CONTACT US</h4>
+            <a href="#">CUSTOMER SERVICE</a>
+            <a href="#">EMAIL</a>
+            <a href="#">DISCORD</a>
+          </div>
+          <div class="col col-3">
+            <h4>CUSTOMER SERVICE</h4>
+            <a href="#">SUPPORT REQUESTS</a>
+            <a href="#">HELP DESK</a>
+            <a href="#">FAQ</a>
+            <a href="#">KNOWLEDGE BASE</a>
+          </div>
+
+          <!-- Responsive footer below -->
+
+          <div class="responsive-footer">
+            <div class="responsive-footer-title" id="title-1">
+              <h4>GAME</h4>
+              <button class="footer-btn" id="btn-1"></button>
+            </div>
+            <div class="responsive-footer-items rfi-1">
+              <a href="#">ABOUT US</a>
+              <a href="#">PRIVACY POLICY</a>
+              <a href="#">TERMS & CONDITIONS</a>
+              <a href="#">GAME MERCHANDISE</a>
+            </div>
+
+            <div class="responsive-footer-title" id="title-2">
+              <h4>MY ACCOUNT</h4>
+              <button class="footer-btn" id="btn-2"></button>
+            </div>
+            <div class="responsive-footer-items rfi-2">
+              <a href="#">MY ACCOUNT</a>
+              <a href="#">MY ORDERS</a>
+              <a href="#">AFFILIATE ACCOUNT</a>
+            </div>
+
+            <div class="responsive-footer-title" id="title-3">
+              <h4>CONTACT US</h4>
+              <button class="footer-btn" id="btn-3"></button>
+            </div>
+            <div class="responsive-footer-items rfi-3">
+              <a href="#">CUSTOMER SERVICE</a>
+              <a href="#">EMAIL</a>
+              <a href="#">DISCORD</a>
+            </div>
+
+            <div class="responsive-footer-title" id="title-4">
+              <h4>CUSTOMER SERVICE</h4>
+              <button class="footer-btn" id="btn-4"></button>
+            </div>
+            <div class="responsive-footer-items rfi-4">
+              <a href="#">SUPPORT REQUESTS</a>
+              <a href="#">HELP DESK</a>
+              <a href="#">FAQ</a>
+              <a href="#">KNOWLEDGE BASE</a>
+            </div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="row-2">
+          <div class="payment-text">Payment method:</div>
+          <div class="payment-img">
+            <img src="./Images/visa.png" alt="visa" />
+            <img src="./Images/paypal.png" alt="paypal" />
+            <img src="./Images/paysafe.png" alt="paysafe" />
+            <img src="./Images/mastercard.png" alt="mastercard" />
+            <img src="./Images/skrill.png" alt="skrill" />
+            <img src="./Images/discover.png" alt="discover" />
+          </div>
+        </div>
+      </div>
+
+      <!--Copyright-->
+      <div class="copyright">
+        <div class="line"></div>
+        <p>Copyright &copy; 2022 Tumurug Aurel</p>
+      </div>
+    </footer>
+  </body>
+</html>
